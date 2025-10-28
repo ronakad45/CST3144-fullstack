@@ -22,5 +22,31 @@
             </div>
         </header>
     </div>
+
+    <script>
+        let afterSchool = new Vue({
+            el: '#app',
+            data: {
+                sitename: "After School lessons ",
+                lessons: [
+                    { id: 1, subject: 'Mathematics', location: 'Dubai Knowledge Park', price: 100, spaces: 5, rating: 4, icon: 'fas fa-calculator' },
+                    { id: 2, subject: 'Sports', location: 'Dubai Marina', price: 80, spaces: 5, rating: 5, icon: 'fas fa-futbol' },
+                    { id: 3, subject: 'Martial Arts', location: 'Jumeirah', price: 90, spaces: 5, rating: 4, icon: 'fas fa-hand-rock' },
+                    { id: 4, subject: 'History', location: 'Business Bay', price: 95, spaces: 5, rating: 3, icon: 'fas fa-landmark' },
+                    { id: 5, subject: 'Cooking', location: 'Al Quoz', price: 85, spaces: 5, rating: 5, icon: 'fas fa-utensils' },
+                    { id: 6, subject: 'Art', location: 'Dubai Marina', price: 75, spaces: 5, rating: 4, icon: 'fas fa-palette' },
+                    { id: 7, subject: 'Music', location: 'Academic City', price: 110, spaces: 5, rating: 5, icon: 'fas fa-music' },
+                    { id: 8, subject: 'Physical Education', location: 'Silicon Oasis', price: 70, spaces: 5, rating: 3, icon: 'fas fa-running' },
+                    { id: 9, subject: 'Computer Science', location: 'Sharjah', price: 120, spaces: 5, rating: 4, icon: 'fas fa-laptop-code' },
+                    { id: 10, subject: 'French', location: 'Fujairah', price: 90, spaces: 5, rating: 4, icon: 'fas fa-language' }
+                ],
+                cart: [],
+                showCart: false,
+                searchQuery: '',
+                sortAttribute: 'subject',
+                sortOrder: 'asc',
+            },
+        });
+    </script>
 </body>
 </html>
